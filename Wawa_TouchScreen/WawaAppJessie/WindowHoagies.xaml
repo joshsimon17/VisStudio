@@ -1,0 +1,45 @@
+﻿<Window x:Class="Wawa_TouchScreen.WindowHoagies"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wawa_TouchScreen"
+        mc:Ignorable="d"
+        Title="WindowHoagies" Height="450" Width="800">
+    <Grid Background="#FFF1F5DB">
+        <ListBox x:Name="listboxOrder" HorizontalAlignment="Left" Height="279" Margin="573,39,0,0" VerticalAlignment="Top" Width="209">
+            <ListBoxItem Content="ROAST BEEF &amp; CHEESE SHORTI"/>
+            <ListBoxItem Content="          SHORTI ROLL"/>
+            <ListBoxItem Content="          AMERICAN CHEESE"/>
+            <ListBoxItem Content="          MEAT"/>
+            <ListBoxItem Content="          MAYO"/>
+            <ListBoxItem Content="          LETTUCE SHREDDED"/>
+        </ListBox>
+        <Label x:Name="labelOrder" Content="My Order" HorizontalAlignment="Left" Margin="641,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="Maroon"/>
+        <Button x:Name="btnCancel" Content="" HorizontalAlignment="Left" Margin="697,326,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="BtnCancel_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaXbtn.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelCancel" Content="Cancel" HorizontalAlignment="Left" Margin="699,376,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon" RenderTransformOrigin="2.461,0.167"/>
+        <Button x:Name="btnPrevious" Content="" HorizontalAlignment="Left" Margin="614,323,0,0" VerticalAlignment="Top" Width="60" Height="60" Click="BtnPrevious_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaBackArrow.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelPrevious" Content="Previous" HorizontalAlignment="Left" Margin="614,376,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000"/>
+        <Image Margin="29,51,521,227" Source="WawaHoagiesCold.png" Stretch="Fill"/>
+        <Image Margin="282,61,276,217" Source="WawaHoagiesCold.png" Stretch="Fill"/>
+        <Image Margin="57,239,563,60" Source="WawaClub.png" Stretch="Fill"/>
+        <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="151" Margin="29,51,0,0" VerticalAlignment="Top" Width="242"/>
+        <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="145" Margin="290,52,0,0" VerticalAlignment="Top" Width="221"/>
+        <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="136" Margin="38,239,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label x:Name="labelHoagiesTop" Content="Hoagies" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000" FontSize="24"/>
+        <Label x:Name="labelClub" Content="Club Sandwhiches" HorizontalAlignment="Left" Margin="94,376,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon" RenderTransformOrigin="-0.842,5.615"/>
+        <Label x:Name="labelHoagiesCold" Content="Cold Hoagies" HorizontalAlignment="Left" Margin="105,192,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon"/>
+        <Label x:Name="labelHoagiesHot" Content="Hot Hoagies" HorizontalAlignment="Left" Margin="363,192,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon"/>
+        <Image Margin="313,239,307,60" Source="WawaQuesadilla.png" Stretch="Fill"/>
+        <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="136" Margin="290,239,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label x:Name="labelQues" Content="Quesadillas" HorizontalAlignment="Left" Margin="354,376,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon" RenderTransformOrigin="-0.842,5.615"/>
+    </Grid>
+</Window>

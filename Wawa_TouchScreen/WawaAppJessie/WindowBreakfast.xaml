@@ -1,0 +1,45 @@
+﻿<Window x:Name="windowBreakfast" x:Class="Wawa_TouchScreen.WindowBreakfast"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wawa_TouchScreen"
+        mc:Ignorable="d"
+        Title="WindowBreakfast" Height="450" Width="800">
+    <Grid Background="#FFF1F5DB">
+        <Button x:Name="btnBreakfastHoagie" Content="" HorizontalAlignment="Left" Margin="173,165,0,0" VerticalAlignment="Top" Width="150" Height="70" Click="BtnBreakfastHoagie_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaBreakfastHoagie.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnBreakfastBurrito" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="375,165,0,0" Height="70" Click="BtnBreakfastBurrito_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaBreakfastBurrito.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelBreakfastHoagie" Content="Hoagies" HorizontalAlignment="Left" Margin="222,139,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000"/>
+        <Label x:Name="labelBreakfastBurrito" Content="Burritos" HorizontalAlignment="Left" Margin="422,139,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000"/>
+        <Label x:Name="labelBreakfastTop" Content="Breakfast" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000" FontSize="24"/>
+        <Button x:Name="btnCancel" Content="" HorizontalAlignment="Left" Margin="697,326,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="BtnCancel_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaXbtn.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelCancel" Content="Cancel" HorizontalAlignment="Left" Margin="699,376,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon" RenderTransformOrigin="2.461,0.167"/>
+        <ListBox x:Name="listboxOrder" HorizontalAlignment="Left" Height="279" Margin="573,39,0,0" VerticalAlignment="Top" Width="209">
+            <ListBoxItem Content="ROAST BEEF &amp; CHEESE SHORTI"/>
+            <ListBoxItem Content="          SHORTI ROLL"/>
+            <ListBoxItem Content="          AMERICAN CHEESE"/>
+            <ListBoxItem Content="          MEAT"/>
+            <ListBoxItem Content="          MAYO"/>
+            <ListBoxItem Content="          LETTUCE SHREDDED"/>
+        </ListBox>
+        <Label x:Name="labelOrder" Content="My Order" HorizontalAlignment="Left" Margin="641,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="Maroon"/>
+        <Button x:Name="btnPrevious" Content="" HorizontalAlignment="Left" Margin="614,323,0,0" VerticalAlignment="Top" Width="60" Height="60" Click="BtnPrevious_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaBackArrow.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelPrevious" Content="Previous" HorizontalAlignment="Left" Margin="614,376,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000"/>
+    </Grid>
+</Window>

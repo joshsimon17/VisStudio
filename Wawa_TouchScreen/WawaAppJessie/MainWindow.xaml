@@ -1,0 +1,53 @@
+﻿<Window x:Name="mainWindow" x:Class="Wawa_TouchScreen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wawa_TouchScreen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFF1F5DB">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="313*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnFreshBaked" Content="" HorizontalAlignment="Left" Margin="96,307,0,0" VerticalAlignment="Top" Width="130" Height="90" BorderThickness="0" Click="BtnFreshBaked_Click" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaFreshBaked.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnBreakfast" Content="" HorizontalAlignment="Left" Margin="86,130,0,0" VerticalAlignment="Top" Click="BtnBreakfast_Click" Height="75" Width="150" BorderThickness="0" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaBreakfast.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnLunchDinner" Content="" HorizontalAlignment="Left" Margin="86,225,0,0" VerticalAlignment="Top" Width="150" Height="75" Click="BtnLunchDinner_Click" BorderThickness="0" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaHoagies.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelBreakfast" Content="Breakfast" HorizontalAlignment="Left" Margin="130,201,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000" Grid.ColumnSpan="2"/>
+        <Label x:Name="labelLunchDinner" Content="Lunch and Dinner" HorizontalAlignment="Left" Margin="110,289,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon" Grid.ColumnSpan="2"/>
+        <Image x:Name="imgAdSizzli" Margin="74.5,6,354,216.5" Source="WawaAd1.jpg" Width="200" Height="200" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="imgAdEggWhite" Margin="74.5,214,354,8.5" Source="WawaAd2.jpg" Stretch="Fill" Width="200" Height="200" Grid.Column="1"/>
+        <Button x:Name="btnBeverages" Content="" HorizontalAlignment="Left" Margin="96,19,0,0" VerticalAlignment="Top" Width="140" Height="80" BorderThickness="0" Click="BtnBeverages_Click" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaBeverages.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelFreshBaked" Content="Fresh Baked Goods" HorizontalAlignment="Left" Margin="104,379,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000" Grid.ColumnSpan="2"/>
+        <Label x:Name="labelBeverages" Content="Beverages" HorizontalAlignment="Left" Margin="130,99,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF960000" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="listboxOrder" HorizontalAlignment="Left" Height="280" Margin="310.5,38,0,0" VerticalAlignment="Top" Width="209" Grid.Column="1" SelectionChanged="ListboxOrder_SelectionChanged">
+            
+        </ListBox>
+        <Label x:Name="labelOrder" Content="My Order" HorizontalAlignment="Left" Margin="374.5,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="Maroon" Grid.Column="1"/>
+        <Button x:Name="btnCancel" Content="" HorizontalAlignment="Left" Margin="531,326,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="BtnCancel_Click" BorderThickness="0" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="WawaXbtn.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelCancel" Content="Cancel" HorizontalAlignment="Left" Margin="533,376,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Maroon" RenderTransformOrigin="2.461,0.167" Grid.Column="1"/>
+        <Label Content="Final Project:&#xA;Ahmed Metwoali&#xA;Aaron Coccagna&#xA;Joshua Simon" Grid.Column="1" HorizontalAlignment="Left" Margin="374.5,318,0,0" VerticalAlignment="Top" Height="96" Width="145" FontWeight="Bold" FontSize="16"/>
+
+    </Grid>
+</Window>
